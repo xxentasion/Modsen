@@ -1,5 +1,5 @@
 "use strict";
 
-function increaseByTenPercent(array) {
+function tenPercent(array) {
     return array.map(num => num * 1.1);
 }
