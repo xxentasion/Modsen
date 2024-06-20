@@ -1,0 +1,417 @@
+:root {
+    --main-bg-color: #74C69D;
+    --dark-100: #212529;
+    --dark-50: rgba(33, 37, 41, 0.50);
+    --dark-75: rgba(0, 0, 0, 0.75);
+    --white-color: #FFF;
+    --black-color: #000;
+    --header-gap: 30px;
+    --text-gap: 15px;
+    --description-gap: 25px;
+    --partners-gap: 55px;
+    --font-family-sans: "Work Sans", sans-serif;
+    --font-family-serif: "Crimson Text", serif;
+    --font-size-header: 20px;
+    --font-size-description: 15px;
+    --line-height: 125%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-sans);
+}
+
+.background {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 60px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 130px 83px;
+    background-color: var(--main-bg-color);
+    margin-bottom: 60px;
+}
+
+.rectangle_up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: var(--header-gap);
+}
+
+.header-buttons button,
+.description-box button,
+.learn-more {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-header);
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+.header-buttons button {
+    color: var(--white-color);
+}
+
+.description-box button,
+.learn-more {
+    background: var(--dark-100);
+    color: var(--white-color);
+    width: 170px;
+    height: 48px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.description-box button {
+    width: 170px;
+    height: 48px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    background: var(--white-color);
+
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: var(--font-family-sans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.description-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--description-gap);
+}
+
+.description-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-gap);
+    color: var(--white-color);
+}
+
+.description-box-welcome,
+.partners-title-head {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: var(--line-height);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.partners-title-head {
+    color: var(--main-bg-color);
+}
+
+.description-box-title,
+.partners-title-title,
+.communication-title,
+.talents-title-title {
+    font-family: var(--font-family-serif);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: var(--line-height);
+}
+
+.description-box-description,
+.partners-title-description,
+.communication-description {
+    font-size: var(--font-size-description);
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+.partners-title-description {
+    font-size: 20px;
+}
+
+.partners-box {
+    display: grid;
+    gap: var(--partners-gap);
+    margin: 0 140px;
+    justify-items: center;
+}
+
+.partners-title {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.partners-title-title {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black-color);
+}
+
+.partners-logos {
+    display: flex;
+    gap: 68px;
+    justify-content: center;
+    align-items: center;
+}
+
+.communication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1180px;
+    justify-self: center;
+}
+
+.communication-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 470px;
+}
+
+.communication-title {
+    color: var(--dark-100);
+}
+
+.communication-description {
+    color: var(--dark-50);
+}
+
+.talents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.talents-title-title {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    gap: 47px;
+}
+
+.card {
+    display: flex;
+    width: 202px;
+    flex-direction: column;
+    gap: 19px;
+    padding: 20px 25px;
+    background: var(--white-color);
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.card img {
+    align-self: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    text-align: left;
+}
+
+.name {
+    font-family: var(--font-family-serif);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.position {
+    color: var(--dark-75);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer {
+    margin-top: 54px;
+    height: 125px;
+    background: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle_down {
+    display: flex;
+    justify-content: space-between;
+    width: 1178px;
+}
+
+.media {
+    display: flex;
+    gap: 20px;
+}
+
+.media button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-text {
+    color: var(--white-color);
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 15px;
+        margin-bottom: 40px;
+    }
+
+    .rectangle_up {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .description-box {
+        order: 2;
+    }
+
+    .description img {
+        order: 1;
+        width: 100%;
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .background img {
+        width: 100%;
+    }
+
+    .partners-box {
+        width: 100%;
+        margin: 0;
+        gap: 55px;
+    }
+
+    .partners-title {
+        width: 100%;
+    }
+
+    .partners-title-title {
+        color: black;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-family: var(--font-family-serif), sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--line-height);
+
+        text-shadow: none;
+        -webkit-text-stroke-width: 0;
+    }
+
+    .partners-logos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .communication {
+        flex-direction: column;
+        width: auto;
+        gap: 30px;
+    }
+
+    .communication-text {
+        width: 100%;
+        order: 1;
+    }
+
+    .talents {
+        gap: 30px;
+    }
+
+    .talents-title-title {
+        color: black;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-family: var(--font-family-serif), sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--line-height);
+    }
+
+    .team {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .card {
+        width: 229px;
+        height: 299px;
+        flex-shrink: 0;
+
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+        width: 175px;
+    }
+
+    .rectangle_down {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .media {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
